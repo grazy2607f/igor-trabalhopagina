@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma interativa de aprendizagem sobre números e operações matemáticas.">
+    <title>Números e Operações | Matemática Interativa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a href="#inicio" class="brand">MAT<span>+</span></a>
+
+        <nav>
+            <a href="#conteudos">Conteúdos</a>
+            <a href="#laboratorio">Laboratório</a>
+            <a href="#atividades">Atividades</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <a href="#quiz" class="nav-button">Começar desafio ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="eyebrow">MATEMÁTICA • ENSINO MÉDIO</span>
+                <h1>O universo dos<br><span>números e operações.</span></h1>
+                <p>
+                    Aprenda, experimente e pratique. Explore os conjuntos
+                    numéricos, descubra as operações e teste seus conhecimentos
+                    em desafios interativos.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#conteudos" class="button button-light">Explorar conteúdos</a>
+                    <a href="#quiz" class="text-link">Ir para o quiz →</a>
+                </div>
+            </div>
+
+            <div class="math-art" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="math-circle">π</div>
+                <span class="symbol symbol-one">√</span>
+                <span class="symbol symbol-two">∑</span>
+                <span class="symbol symbol-three">÷</span>
+                <span class="symbol symbol-four">x²</span>
+                <span class="symbol symbol-five">½</span>
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 — APRENDER</span>
+                <span>02 — PRATICAR</span>
+                <span>03 — CONQUISTAR</span>
+            </div>
+        </section>
+
+        <section class="intro section" id="conteudos">
+            <div class="section-heading">
+                <span class="eyebrow">SEU GUIA DE ESTUDOS</span>
+                <h2>Matemática que faz sentido.</h2>
+                <p>
+                    Os números estão presentes nas compras, nas medidas,
+                    nas receitas e em muitas outras situações. Conheça
+                    os conceitos que ajudam a interpretar o mundo.
+                </p>
+            </div>
+
+            <div class="topic-grid">
+                <article class="topic-card">
+                    <span class="topic-symbol">½</span>
+                    <span class="topic-number">01</span>
+                    <h3>Frações e decimais</h3>
+                    <p>Partes de um todo, representações decimais e porcentagens.</p>
+                    <a href="#fracoes">Estudar conteúdo →</a>
+                </article>
+
+                <article class="topic-card">
+                    <span class="topic-symbol">−8</span>
+                    <span class="topic-number">02</span>
+                    <h3>Conjuntos numéricos</h3>
+                    <p>Naturais, inteiros, racionais, irracionais e reais.</p>
+                    <a href="#conjuntos">Estudar conteúdo →</a>
+                </article>
+
+                <article class="topic-card">
+                    <span class="topic-symbol">× ÷</span>
+                    <span class="topic-number">03</span>
+                    <h3>Operações</h3>
+                    <p>Adição, subtração, multiplicação e divisão.</p>
+                    <a href="#operacoes">Estudar conteúdo →</a>
+                </article>
+
+                <article class="topic-card">
+                    <span class="topic-symbol">√x</span>
+                    <span class="topic-number">04</span>
+                    <h3>Potências e raízes</h3>
+                    <p>Potenciação, radiciação e suas propriedades.</p>
+                    <a href="#potencias">Estudar conteúdo →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section lesson-section" id="conjuntos">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 01</span>
+                <h2>Conhecendo os conjuntos numéricos</h2>
+                <p>
+                    Os conjuntos numéricos organizam os números conforme
+                    suas propriedades.
+                </p>
+            </div>
+
+            <div class="number-line">
+                <div class="number-type">
+                    <span class="type-letter">N</span>
+                    <div>
+                        <h3>Naturais</h3>
+                        <p>0, 1, 2, 3, 4, 5...</p>
+                        <small>Usados principalmente para contar.</small>
+                    </div>
+                </div>
+
+                <div class="number-type">
+                    <span class="type-letter">Z</span>
+                    <div>
+                        <h3>Inteiros</h3>
+                        <p>..., −3, −2, −1, 0, 1, 2...</p>
+                        <small>Incluem negativos, zero e positivos.</small>
+                    </div>
+                </div>
+
+                <div class="number-type">
+                    <span class="type-letter">Q</span>
+                    <div>
+                        <h3>Racionais</h3>
+                        <p>1/2, −3, 0,75, 0,333...</p>
+                        <small>Podem ser escritos como fração de inteiros.</small>
+                    </div>
+                </div>
+
+                <div class="number-type">
+                    <span class="type-letter">I</span>
+                    <div>
+                        <h3>Irracionais</h3>
+                        <p>π, √2, √3...</p>
+                        <small>Decimais infinitos e não periódicos.</small>
+                    </div>
+                </div>
+
+                <div class="number-type">
+                    <span class="type-letter">R</span>
+                    <div>
+                        <h3>Reais</h3>
+                        <p>Racionais + irracionais</p>
+                        <small>Reúnem os números da reta real.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note">
+                <strong>Para lembrar:</strong> todo número natural é inteiro,
+                todo inteiro é racional e todo racional é real. Os irracionais
+                também pertencem aos reais, mas não aos racionais.
+            </div>
+        </section>
+
+        <section class="section split-section" id="fracoes">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 02</span>
+                <h2>Frações, decimais e porcentagens</h2>
+                <p>
+                    Uma fração representa uma divisão entre dois números
+                    inteiros, desde que o denominador seja diferente de zero.
+                </p>
+            </div>
+
+            <div class="split-grid">
+                <div class="explanation">
+                    <h3>Como interpretar uma fração?</h3>
+                    <div class="fraction-display">
+                        <span>3</span>
+                        <hr>
+                        <span>4</span>
+                    </div>
+                    <p>
+                        O numerador indica quantas partes foram consideradas.
+                        O denominador indica em quantas partes iguais o todo
+                        foi dividido.
+                    </p>
+
+                    <div class="formula-box">
+                        3 ÷ 4 = 0,75 = 75%
+                    </div>
+                </div>
+
+                <div class="interactive-panel">
+                    <span class="panel-tag">EXPERIMENTE</span>
+                    <h3>Conversor de frações</h3>
+
+                    <label for="numerador">Numerador</label>
+                    <input type="number" id="numerador" value="3">
+
+                    <label for="denominador">Denominador</label>
+                    <input type="number" id="denominador" value="4">
+
+                    <button class="button" id="btnFracao">Converter fração</button>
+
+                    <div class="result-box" id="resultadoFracao" aria-live="polite">
+                        Resultado: 0,75
+                    </div>
+
+                    <div class="fraction-bar" aria-label="Representação visual da fração">
+                        <div id="barraFracao"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-panel wide-panel">
+                <span class="panel-tag">OUTRA REPRESENTAÇÃO</span>
+                <h3>De decimal para porcentagem</h3>
+                <p>Multiplique o número decimal por 100.</p>
+
+                <div class="inline-calculator">
+                    <input type="number" id="decimal" value="0.75" step="any" aria-label="Número decimal">
+                    <button class="button" id="btnPorcentagem">Converter</button>
+                </div>
+
+                <div class="result-box" id="resultadoPorcentagem" aria-live="polite">
+                    0,75 corresponde a 75%.
+                </div>
+            </div>
+        </section>
+
+        <section class="section lesson-section" id="operacoes">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 03</span>
+                <h2>As quatro operações fundamentais</h2>
+                <p>
+                    As operações permitem juntar, retirar, multiplicar
+                    e distribuir quantidades.
+                </p>
+            </div>
+
+            <div class="operation-grid">
+                <article><span>+</span><h3>Adição</h3><p>8 + 5 = 13</p><small>Juntar quantidades.</small></article>
+                <article><span>−</span><h3>Subtração</h3><p>12 − 4 = 8</p><small>Encontrar a diferença.</small></article>
+                <article><span>×</span><h3>Multiplicação</h3><p>4 × 3 = 12</p><small>Somar parcelas iguais.</small></article>
+                <article><span>÷</span><h3>Divisão</h3><p>20 ÷ 4 = 5</p><small>Repartir em partes iguais.</small></article>
+            </div>
+
+            <div class="interactive-panel wide-panel">
+                <span class="panel-tag">CALCULADORA</span>
+                <h3>Faça sua própria operação</h3>
+
+                <div class="calculator-grid">
+                    <input type="number" id="num1" value="12" aria-label="Primeiro número">
+                    <select id="operacao" aria-label="Operação">
+                        <option value="+">+ Adição</option>
+                        <option value="-">− Subtração</option>
+                        <option value="*">× Multiplicação</option>
+                        <option value="/">÷ Divisão</option>
+                    </select>
+                    <input type="number" id="num2" value="4" aria-label="Segundo número">
+                </div>
+
+                <button class="button" id="btnCalcular">Calcular</button>
+                <div class="result-box" id="resultadoCalculo" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="section split-section" id="potencias">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 04</span>
+                <h2>Potenciação e radiciação</h2>
+                <p>
+                    Duas operações relacionadas: a potenciação trabalha
+                    com fatores iguais e a radiciação busca a raiz de um número.
+                </p>
+            </div>
+
+            <div class="content-pair">
+                <div class="explanation">
+                    <h3>Potenciação</h3>
+                    <div class="formula-box">2³ = 2 × 2 × 2 = 8</div>
+                    <p>O 2 é a base e o 3 é o expoente.</p>
+                </div>
+
+                <div class="explanation">
+                    <h3>Radiciação</h3>
+                    <div class="formula-box">√25 = 5</div>
+                    <p>Porque 5² = 25.</p>
+                </div>
+            </div>
+
+            <div class="split-grid">
+                <div class="interactive-panel">
+                    <span class="panel-tag">CALCULADORA</span>
+                    <h3>Potenciação</h3>
+
+                    <label for="base">Base</label>
+                    <input type="number" id="base" value="2">
+
+                    <label for="expoente">Expoente inteiro</label>
+                    <input type="number" id="expoente" value="3" step="1">
+
+                    <button class="button" id="btnPotencia">Calcular potência</button>
+                    <div class="result-box" id="resultadoPotencia" aria-live="polite"></div>
+                </div>
+
+                <div class="interactive-panel">
+                    <span class="panel-tag">CALCULADORA</span>
+                    <h3>Raiz quadrada</h3>
+
+                    <label for="raiz">Número não negativo</label>
+                    <input type="number" id="raiz" value="81" min="0" step="any">
+
+                    <button class="button" id="btnRaiz">Calcular raiz</button>
+                    <div class="result-box" id="resultadoRaiz" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section lesson-section">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 05</span>
+                <h2>Ordem das operações</h2>
+                <p>
+                    Resolver uma expressão na ordem correta é essencial
+                    para encontrar o resultado esperado.
+                </p>
+            </div>
+
+            <div class="order-card">
+                <div class="order-expression">8 + 2 × (6 − 3)</div>
+                <div class="order-steps">
+                    <div><span>01</span><p>Parênteses: 6 − 3 = 3</p></div>
+                    <div><span>02</span><p>Multiplicação: 2 × 3 = 6</p></div>
+                    <div><span>03</span><p>Adição: 8 + 6 = 14</p></div>
+                </div>
+                <div class="order-answer">Resultado final: 14</div>
+            </div>
+
+            <div class="note">
+                A ordem geral é: parênteses e outros sinais de agrupamento;
+                potências e raízes; multiplicações e divisões, da esquerda
+                para a direita; adições e subtrações, também da esquerda
+                para a direita.
+            </div>
+        </section>
+
+        <section class="section split-section">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 06</span>
+                <h2>Estimativa e arredondamento</h2>
+                <p>
+                    Estimar é encontrar um valor aproximado. Arredondar
+                    facilita a leitura e o uso de números.
+                </p>
+            </div>
+
+            <div class="example-strip">
+                <span>7,856</span>
+                <span class="arrow">→</span>
+                <span>7,9</span>
+                <small>Arredondamento para uma casa decimal.</small>
+            </div>
+
+            <div class="interactive-panel wide-panel">
+                <h3>Pratique o arredondamento</h3>
+
+                <label for="numeroArredondar">Número</label>
+                <input type="number" id="numeroArredondar" value="7.856" step="any">
+
+                <label for="casas">Casas decimais</label>
+                <select id="casas">
+                    <option value="0">Número inteiro</option>
+                    <option value="1" selected>Uma casa decimal</option>
+                    <option value="2">Duas casas decimais</option>
+                    <option value="3">Três casas decimais</option>
+                </select>
+
+                <button class="button" id="btnArredondar">Arredondar</button>
+                <div class="result-box" id="resultadoArredondamento" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="section lesson-section" id="laboratorio">
+            <div class="section-heading">
+                <span class="eyebrow">CAPÍTULO 07</span>
+                <h2>Matemática na vida real</h2>
+                <p>
+                    Use os números para resolver problemas cotidianos,
+                    como ajustar receitas e comparar preços.
+                </p>
+            </div>
+
+            <div class="split-grid">
+                <div class="interactive-panel">
+                    <span class="panel-tag">SITUAÇÃO PRÁTICA</span>
+                    <h3>Ajuste uma receita</h3>
+                    <p>Descubra quanto de ingrediente será necessário para outra quantidade de pessoas.</p>
+
+                    <label for="ingrediente">Quantidade original do ingrediente</label>
+                    <input type="number" id="ingrediente" value="2" step="any">
+
+                    <label for="pessoasOriginais">Pessoas na receita original</label>
+                    <input type="number" id="pessoasOriginais" value="4" min="1">
+
+                    <label for="pessoasNovas">Nova quantidade de pessoas</label>
+                    <input type="number" id="pessoasNovas" value="8" min="1">
+
+                    <button class="button" id="btnReceita">Calcular receita</button>
+                    <div class="result-box" id="resultadoReceita" aria-live="polite"></div>
+                </div>
+
+                <div class="interactive-panel">
+                    <span class="panel-tag">SITUAÇÃO PRÁTICA</span>
+                    <h3>Compare preços</h3>
+                    <p>Compare o custo por unidade de dois produtos.</p>
+
+                    <label for="precoA">Preço do produto A (R$)</label>
+                    <input type="number" id="precoA" value="12" min="0" step="0.01">
+
+                    <label for="quantidadeA">Quantidade do produto A</label>
+                    <input type="number" id="quantidadeA" value="500" min="0.01" step="any">
+
+                    <label for="precoB">Preço do produto B (R$)</label>
+                    <input type="number" id="precoB" value="18" min="0" step="0.01">
+
+                    <label for="quantidadeB">Quantidade do produto B</label>
+                    <input type="number" id="quantidadeB" value="1000" min="0.01" step="any">
+
+                    <button class="button" id="btnPrecos">Comparar produtos</button>
+                    <div class="result-box" id="resultadoPrecos" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section exercises-section" id="atividades">
+            <div class="section-heading">
+                <span class="eyebrow">HORA DE PRATICAR</span>
+                <h2>Atividades interativas</h2>
+                <p>
+                    Escolha uma alternativa e receba uma explicação
+                    sobre a resposta.
+                </p>
+            </div>
+
+            <div id="listaAtividades" class="exercise-list"></div>
+        </section>
+
+        <section class="section quiz-section" id="quiz">
+            <div class="quiz-header">
+                <span class="eyebrow">DESAFIO FINAL</span>
+                <h2>Teste seus conhecimentos.</h2>
+                <p>
+                    Responda às questões e descubra quantos pontos
+                    consegue conquistar.
+                </p>
+            </div>
+
+            <div class="quiz-progress">
+                <div class="progress-info">
+                    <span id="progressoTexto">Questão 1 de 5</span>
+                    <span id="progressoPercentual">0%</span>
+                </div>
+                <div class="progress-track">
+                    <div id="barraProgresso"></div>
+                </div>
+            </div>
+
+            <div id="quizArea" class="quiz-area"></div>
+
+            <div id="quizResultado" class="quiz-result" hidden></div>
+
+            <div class="quiz-controls">
+                <button id="btnAnterior" class="button button-outline" disabled>Anterior</button>
+                <button id="btnProximo" class="button">Próxima questão</button>
+                <button id="btnReiniciar" class="button" hidden>Refazer quiz</button>
+            </div>
+        </section>
+
+        <section class="section summary-section">
+            <span class="eyebrow">REVISÃO FINAL</span>
+            <h2>O que você aprendeu?</h2>
+
+            <div class="summary-list">
+                <p><strong>Frações:</strong> representam partes de um todo e podem ser convertidas em decimais.</p>
+                <p><strong>Inteiros:</strong> incluem números negativos, zero e positivos.</p>
+                <p><strong>Racionais:</strong> podem ser escritos como frações de inteiros.</p>
+                <p><strong>Irracionais:</strong> têm representação decimal infinita e não periódica.</p>
+                <p><strong>Operações:</strong> adição, subtração, multiplicação e divisão.</p>
+                <p><strong>Potenciação:</strong> multiplicação de fatores iguais.</p>
+                <p><strong>Radiciação:</strong> operação inversa da potenciação em situações correspondentes.</p>
+                <p><strong>Arredondamento:</strong> aproximação de um número conforme a casa decimal desejada.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">MAT<span>+</span></div>
+        <p>Aprender matemática é descobrir novas possibilidades.</p>
+        <small>Projeto educativo • Números e Operações</small>
+    </footer>
+</body>
+</html>
